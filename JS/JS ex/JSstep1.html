@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" Calculator="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <form>
+    <div>
+        <label>Number 1</label>
+        <input type="text" id="num1"></input>
+    </div>
+    <div>
+        <label>Number 2</label>
+        <input type="text" id="num2"></input:>
+    </div>
+    <div>
+        <input type="button" onclick="sumNum()" value="Result">    </div>
+    </form>
+    <div>Result: <span id="result" ></span></div>
+</body>
+<script>
+    function sumNum(){
+        let a = document.getElementById('num1').value;
+        let b = document.getElementById('num2').value;
+        
+        let result = Number(a)+Number(b);
+        
+        document.getElementById('result').textContent = result;
+
+    }
+
+</script>
+</html>
